@@ -5,6 +5,7 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "twilio": "^4.7.2"
   }
