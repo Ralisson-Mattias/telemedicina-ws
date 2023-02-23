@@ -18,7 +18,7 @@ const twilioAccountSid = process.env.TWILIO_ACCOUNT_SID;
 const twilioApiKey = process.env.TWILIO_API_KEY;
 const twilioApiSecret = process.env.TWILIO_API_SECRET;
 
-app.get("/", (req, res) => {
+app.post("/", (req, res) => {
   const { roomName, identity } = req.body;
 
   if (roomName && identity) {
