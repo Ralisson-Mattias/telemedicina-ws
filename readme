@@ -1,0 +1,15 @@
+Simples web server para comunicação com a twilio
+
+## Ambiente necessário
+
+- Node >= 18
+- Ter o yarn instalado (_NÃO UTILIZAR O NPM_)
+
+## Instalação
+
+- yarn install
+- Adicionar o .env na raiz do projeto seguindo o modelo de exemplo
+
+## Iniciando o projeto localmente
+
+- node --watch index.js

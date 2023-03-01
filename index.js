@@ -42,9 +42,3 @@ app.post("/", (req, res) => {
 
   res.json({ message: "ERROR" });
 });
-
-app.get("/credentials", (req, res) => {
-  const client = twilio(twilioAccountSid, twilioApiKey);
-
-  client.tokens.create().then((token) => res.send({ token }));
-});
