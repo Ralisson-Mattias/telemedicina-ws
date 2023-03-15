@@ -1,6 +1,7 @@
 import twilio from "twilio";
 import express from "express";
 import { config } from "dotenv";
+import cors from "cors";
 
 const PORT = process.env.PORT || 3000;
 
@@ -9,6 +10,7 @@ config();
 const app = express();
 app.listen(PORT);
 app.use(express.json());
+app.use(cors());
 
 const {
   jwt: { AccessToken },
